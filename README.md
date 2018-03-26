@@ -5,7 +5,7 @@ Code shown and explained in teachings
 
 ### Code added to the controller
 ````java 
-  ArrayList<Student> students = new ArraList<>();
+  ArrayList<Student> students = new ArrayList<>();
   
   @GetMapping("/details")
   public String details(@RequestParam("id") int id, Model model) {
@@ -13,7 +13,7 @@ Code shown and explained in teachings
         return "details";
   }
 ````   
-### create.html
+### details.html
 ````java    
     <h1>Details</h1>
     <p th:text="'ID: ' + ${student.studentId}"/>
